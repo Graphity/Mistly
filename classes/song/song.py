@@ -9,5 +9,5 @@ class Song(Parser):
 
     def __repr__(self):
         return (
-            f"{self.__class__.__name__} band: {self.band}, song: {self.song}"
+            f"({self.__class__.__name__} band: {self.band}, song: {self.song})"
         )
