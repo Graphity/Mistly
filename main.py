@@ -1,4 +1,5 @@
 from classes.song.song import Song
+from classes.writer.writer import Writer
 
 
 def main():
@@ -8,10 +9,13 @@ def main():
     song = song_inp.replace(" ", "-")
 
     url = f"https://genius.com/{band}-{song}-lyrics"
-
     s = Song(band, song, url, "div", "Lyrics__Container-sc-1ynbvzw-6 jYfhrf")
     print(s.__repr__())
-    print(f"Lyric: {s.parse_web()}")
+    lyric = s.parse_web()
+    print(f"Lyric: {lyric}")
+
+    wr = Writer("lyric.txt", "w", lyric)
+    wr.write_in_file()
 
 
 if __name__ == "__main__":
