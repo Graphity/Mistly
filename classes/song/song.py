@@ -2,7 +2,7 @@ from classes.parser.parser import Parser
 
 
 class Song(Parser):
-    def __init__(self, band, song, url, tag, name):
+    def __init__(self, band: str, song: str, url: str, tag: str, name: str):
         super().__init__(url, tag, name)
         self.band = band
         self.song = song

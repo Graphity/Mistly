@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 
 
 class Parser:
-    def __init__(self, url, tag, name):
+    def __init__(self, url: str, tag: str, name: str):
         self.url = url
         self.tag = tag
         self.name = name

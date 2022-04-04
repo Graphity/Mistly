@@ -21,6 +21,7 @@ def main():
 
         wr = Writer(f"{song_inp}.txt", "w", lyric)
         wr.write_in_file()
+
         question = input("press q or c to exit or continue: ")
         if question.lower() == "q":
             break
