@@ -1,6 +1,6 @@
 import requests
 
-from song import Song
+from .song import Song
 
 from typing import List
 

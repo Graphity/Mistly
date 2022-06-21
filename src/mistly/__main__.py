@@ -3,8 +3,8 @@ import os
 from string import digits, ascii_lowercase, ascii_uppercase, punctuation
 from typing import List
 
-from genius import Genius
-from song import Song
+from .genius import Genius
+from .song import Song
 
 from rich import box
 from rich.align import Align
